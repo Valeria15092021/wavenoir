@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAVENOIR — Про портал</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <a href="index.html" class="logo">◉ WAVENOIR</a>
+                <nav class="nav-links">
+                    <a href="index.html">Головна</a>
+                    <a href="artists.html">Виконавці та жанри</a>
+                    <a href="about.html" class="active">Про портал</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <div class="about-layout">
+            <section class="section">
+                <h2>Про проєкт WAVENOIR</h2>
+                <div class="info-box">
+                    <p><strong>WAVENOIR</strong> — це тематичний музичний вебпортал, створений для поціновувачів атмосферної, альтернативної та інді-музики.</p>
+                    <p>На сайті зібрані актуальні добірки треків, інформація про сучасних виконавців та опис ключових музичних напрямів.</p>
+                    <ul class="feature-list">
+                        <li>Зручне прослуховування треків прямо на сторінці</li>
+                        <li>Огляди улюблених виконавців та музичних стилів</li>
+                        <li>Адаптивний інтерфейс для комп'ютерів, планшетів і смартфонів</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Запропонувати трек у добірку</h2>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="user-name">Ваше ім'я</label>
+                        <input type="text" id="user-name" name="name" placeholder="Введіть ім'я" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="track-name">Виконавець та назва треку</label>
+                        <input type="text" id="track-name" name="track" placeholder="Наприклад: The Elliens — Маріонетка" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="genre">Жанр</label>
+                        <select id="genre" name="genre">
+                            <option value="dark-pop">Dark Pop</option>
+                            <option value="indie-rock">Indie Rock</option>
+                            <option value="dream-pop">Dream Pop</option>
+                            <option value="other">Інший жанр</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment">Коментар</label>
+                        <textarea id="comment" name="comment" rows="3" placeholder="Чому варто додати цей трек?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Надіслати пропозицію</button>
+                </form>
+            </section>
+        </div>
+
+    </main>
+
+</body>
+</html>
